@@ -5,6 +5,7 @@ var item = document.getElementsByTagName("li");
 var filter = document.getElementById('filter');
 var itemList = document.getElementById('items');
 var something = "Sriharsh Aditya"
+var another_name = "Prashant"
 
 function inputLength(){
 	return input.value.length;
