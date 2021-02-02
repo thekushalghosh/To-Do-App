@@ -4,10 +4,11 @@ var ul = document.querySelector("ul");
 var item = document.getElementsByTagName("li");
 var filter = document.getElementById('filter');
 var itemList = document.getElementById('items');
+var something = "Sriharsh Aditya"
 
 function inputLength(){
 	return input.value.length;
-} 
+}
 
 function listLength(){
 	return item.length;
@@ -16,7 +17,7 @@ function listLength(){
 function createListElement() {
 	var li = document.createElement("li");
 	li.appendChild(document.createTextNode(input.value));
-	ul.appendChild(li); 
+	ul.appendChild(li);
 	input.value = "";
 
 
@@ -46,15 +47,15 @@ function createListElement() {
 
 
 function addListAfterClick(){
-	if (inputLength() > 0) { 
+	if (inputLength() > 0) {
 		createListElement();
 	}
 }
 
 function addListAfterKeypress(event) {
-	if (inputLength() > 0 && event.which ===13) { 
+	if (inputLength() > 0 && event.which ===13) {
 		createListElement();
-	} 
+	}
 }
 
 
